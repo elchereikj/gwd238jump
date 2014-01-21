@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab 1</title>
+<style>
+	#box
+	{
+		width:100px;
+		height: 100px;
+		border: 5px solid black;
+	}
+	
+	#content
+	{
+		width: 25%;
+	}
+	
+	.extra
+	{
+		display:none;
+	}
+	
+</style>
+</head>
+
+<body>
+	<div id="box">Box 1</div>
+     
+    <form>
+    	<fieldset>
+        	<input type="button" id="button1" value="change color >>" />
+        </fieldset>
+    </form>
+    
+    <div id="content">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <a href="#" id="more">more...</a></p>
+
+<p class="extra">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,<a href="#" id="less">less...</a></p>
+    </div>
+     
+    
+    <script>
+		document.getElementById('button1').onclick=function (){
+			//alert('green');
+			document.getElementById('box').style.backgroundColor="green";
+			document.getElementById('box').style.borderRadius="50%";
+			document.getElementById('box').style.marginLeft="25%";
+		}
+		
+		document.getElementById('more').onclick=function (){
+			//alert('green');
+			document.querySelector('.extra').style.display="block";
+			document.getElementById('more').style.display="none";
+		}
+		
+		document.getElementById('less').onclick=function (){
+			//alert('green');
+			document.querySelector('.extra').style.display="none";
+			document.getElementById('more').style.display="inline";
+		}
+			
+    </script>
+</body>
+</html>
