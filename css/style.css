@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+body {
+	background:url(../img/notebook.png);
+}
+
+.title {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:700;
+}
+
+.weeks {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:700;
+}
+
+.topics {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:300;
+}
+
+p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:300;
+}
+
+.button {
+	background:#009966;
+}
+	.button a:hover {
+		background:#00CC00;
+	}
+
+.left-off-canvas-menu {
+}
+
+.left-off-canvas-menu li {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:300;
+	font-size:16px;
+	border-bottom:#000000 thin solid;
+	list-style: none;
+	text-align:center;
+}
+
+.left-off-canvas-menu a {
+	color:#FFFFFF;
+}
+
+.left-off-canvas-menu li label {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:700;
+	font-size:18px;
+	background:#999999;
+	color:#FFFFFF;
+	padding: 5px;
+	text-align:center;
+}
